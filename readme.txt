@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.0
 Stable tag: 1.0
 
-GetSatisfactio plugin that will allow you to integrate with GetSatisfaction to create, manage, and display
+GetSatisfaction plugin that will allow you to integrate with GetSatisfaction to create, manage, and display
 Topics and Replies.
 
 == Description ==
