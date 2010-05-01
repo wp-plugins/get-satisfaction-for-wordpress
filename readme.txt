@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: getsatisfaction
+Contributors: GetSatisfaction
 Donate link: http://getsatisfaction.com
 Tags: getsatisfaction
 Requires at least: 3.0
@@ -77,9 +77,3 @@ user dashboard.
 
 
 == Changelog ==
-
-
-== Arbitrary section ==
-
-
-== A brief Markdown Example ==
