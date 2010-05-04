@@ -101,7 +101,7 @@ function add_company_info_content($content) {
     if ($post->post_type == 'topic') {
         include('views/content-template.php');        
     } else {
-        return $post;
+        return $post->post_content;        
     }
 }
 ?>
