@@ -97,11 +97,11 @@ add_filter('the_content', 'add_company_info_content' );
  */
 function add_company_info_content($content) {
     global $post;
-    
+    $content = $post->post_content;
     if ($post->post_type == 'topic') {
-        include('views/content-template.php');        
+        include('views/content-template.php');
     } else {
-        return $post->post_content;        
+        return $content;;
     }
 }
 ?>
