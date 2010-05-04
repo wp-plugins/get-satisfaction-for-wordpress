@@ -90,7 +90,7 @@ function topic_comment($comment, $args, $depth) {
 }
 
 // Add Company Information To Content
-add_filter('the_content', 'add_company_info_content' );
+add_filter('the_content', 'add_company_info_content', 1);
 
 /**
  * Add Company Info to Content
