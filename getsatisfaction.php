@@ -76,6 +76,10 @@ if (!class_exists('GetSatisfaction')) {
 
             /* Filters */
             add_filter('pre_get_posts', array(&$this, 'add_topic_get_posts'));
+
+            // Add All Post Type
+            add_filter('request',array(&$this, 'add_all_post_type'));
+            
             // add_filter('the_content', array(&$this, 'filter_content'), 0);            
     	}
     	
@@ -280,6 +284,12 @@ if (!class_exists('GetSatisfaction')) {
         function error_message($loc) {
             return add_query_arg('error_message', 123, $loc);
         }                  
+
+        function add_all_post_type($qv) {
+        	if (isset($qv['feed']))
+        		$qv['post_type'] = get_post_types();
+        	return $qv;
+        }
         
          
     } // GetSatisfaction
