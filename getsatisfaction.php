@@ -249,7 +249,7 @@ if (!class_exists('GetSatisfaction')) {
                 $topic['subject'] = $_POST['post_title'];
                 $topic['additional_detail'] = $_POST['content'];
                 $topic['company_domain'] = $_POST['company_domain'];
-                $topic['topic_style'] = $_POST['topic_style'];
+                $topic['style'] = $_POST['topic_style'];
 
                 // TODO : Display Error Message and Add Better Error Handling
                 $status = GetSatisfactionServiceApi::create_topic($topic);    
