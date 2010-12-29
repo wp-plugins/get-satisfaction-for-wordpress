@@ -26,7 +26,7 @@
             <option value="question">Question</option>
             <option value="idea">Idea</option>
             <option value="problem">Problem</option>
-            <option value="answer">Answer</option>
+            <option value="praise">Praise</option>
         </select>
     </p>
 </div>
